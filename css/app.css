@@ -1,0 +1,66 @@
+body {
+  margin-top: 50px;
+}
+
+.emptyMessage {
+  font-weight: bold;
+  color: #E74C3C;
+  font-size: 1em;
+}
+li {
+  margin-bottom: 7px;
+  font-size: 1.2em;
+}
+li > button {
+  margin-left: 6px;
+}
+button > span {
+  color: #fff;
+}
+
+h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Baloo Thambi', cursive;
+}
+
+.sub-title {
+  font-family: 'Baloo Thambi', cursive;
+}
+
+th.header {
+  font-family: 'Lobster', cursive;
+}
+
+
+
+h2.buy {
+  color: #1D8348;
+}
+
+h2.bought {
+  color: #E74C3C;
+}
+
+.shopping-item {
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+td.table-cell-1 {
+  width:70%;
+}
+
+td.table-cell-2 {
+  width:30%;
+}
