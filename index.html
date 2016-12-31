@@ -4,14 +4,14 @@
     <title>Shopping List Check Off</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon"
+      type="image/png"
+      href="images/unixdev-logo.png">
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Lobster|Shadows+Into+Light|Rock+Salt" rel="stylesheet">    <!-- AS PER COMMUNITY RECOMMENDATION - INCLUDE ANGULARJS AT THE TOP -->
-    <script src="js/angular.min.js"></script>
+
   </head>
 <body>
-
   <div class="container">
   <div class=col-md-12>
       <h1 class="text-center title">Shopping List Check Off</h1>
@@ -62,8 +62,8 @@
          </thead>
          <tbody>
            <tr ng-repeat="item in ctrlBought.items">
-             <td class="shopping-item table-cell-1">{{ item.quantity }} of {{ item.name }}<span ng-if="item.quantity > 1">s</span></td>
-             <td class="table-cell-2"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></td>
+             <td class="shopping-item table-cell-1"><strike>{{ item.quantity }} of {{ item.name }}<span ng-if="item.quantity > 1">s</span></strike></td>
+             <td class="table-cell-2"><span class="glyphicon glyphicon-ok check" aria-hidden="true"></span></td>
            </tr>
            <!-- Insert an empty row when the table is empty to keep the table header alignment -->
            <div ng-if="ctrlBought.items.length == 0">
@@ -79,6 +79,13 @@
   </div>
 </div>
 <!-- APP JAVASCRIPT IS INCLUDED AT THE BOTTOM -->
+<div class="navbar navbar-inner  navbar-fixed-bottom footer">
+    <p class="muted credit"><center>unixdev <span class="heart glyphicon glyphicon-heart" aria-hidden="true"></span> Coursera. Copyright &copy; 2016,2017 - <a href="#">No Special Terms</a> &middot; <a href="#">Public</a></center></p>
+ </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="js/angular.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

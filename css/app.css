@@ -7,6 +7,7 @@ body {
   color: #E74C3C;
   font-size: 1em;
 }
+
 li {
   margin-bottom: 7px;
   font-size: 1.2em;
@@ -41,9 +42,7 @@ th.header {
   font-family: 'Lobster', cursive;
 }
 
-
-
-h2.buy {
+.check {
   color: #1D8348;
 }
 
@@ -63,4 +62,15 @@ td.table-cell-1 {
 
 td.table-cell-2 {
   width:30%;
+}
+
+.footer {
+  text-align: center;
+  height: 40px;
+  paddint-top:20px;
+  background: #f4f4f4;
+}
+
+.heart {
+  color: #E74C3C;
 }
